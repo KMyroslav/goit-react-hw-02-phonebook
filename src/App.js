@@ -50,10 +50,6 @@ class App extends Component {
     this.setState({ filter: e.currentTarget.value });
   };
 
-  updateFilterState = (filterText) => {
-    this.setState({ filter: filterText });
-  };
-
   render() {
     return (
       <div>
