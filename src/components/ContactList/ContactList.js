@@ -8,7 +8,13 @@ function ContactList({ contacts, filter, handleDelete }) {
         .map((e) => (
           <p key={e.id}>
             {e.name}: {e.number}
-            <button type="button" data-id={e.id} onClick={handleDelete}>
+            <button
+              type="button"
+              data-id={e.id}
+              onClick={() => {
+                handleDelete(e.id);
+              }}
+            >
               Delete
             </button>
           </p>

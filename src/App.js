@@ -34,8 +34,7 @@ class App extends Component {
     });
   };
 
-  handleDelete = (e) => {
-    const contactId = e.currentTarget.dataset.id;
+  handleDelete = (contactId) => {
     this.setState({
       contacts: this.state.contacts.reduce((acc, el) => {
         if (el.id !== contactId) {
